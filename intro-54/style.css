@@ -1,0 +1,35 @@
+body, html {
+  background-color: #38354b;
+}
+
+.text {
+  max-width: 30vw;
+  text-align: center;
+  color: rgb(243, 196, 243);
+  font-size: 30px;
+}
+
+.container {
+  width: 50vw;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f02929;
+  position: relative;
+  top: 50px;
+  left: 100px;
+  z-index: 1;
+}
+
+.box {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 50vw;
+  height: 100px;
+}
