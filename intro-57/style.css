@@ -1,0 +1,39 @@
+body, html {
+  background-color: #38354b;
+}
+
+.wrapper {
+  max-width: 700px;
+  max-height: 300px;
+  position: absolute;
+  display: inline-block;
+  top: 50px;
+  right: 50%;
+}
+
+.title {
+  color: white;
+  font-size: 50px;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  transform: translate(-120%, -20%);
+  width: 100px;
+  height: 100px;
+  background: aqua;
+  border: 5px solid #ffffff;
+  border-radius: 100%;
+} 
+
+.title::after {
+  content: '';
+  position: absolute;
+  transform: translate(20%, -19%);
+  width: 100px;
+  height: 100px;
+  background: aqua;
+  border: 5px solid #ffffff;
+  border-radius: 100%;
+} 
