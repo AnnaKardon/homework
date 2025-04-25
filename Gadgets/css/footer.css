@@ -1,0 +1,41 @@
+.footer {
+  background: #f8f9fa;
+  min-height: 300px;
+}
+
+.footer_inner {
+  display: grid;
+  gap: 20px;
+  justify-content: space-around;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+
+  margin-top: 44px;
+}
+
+.footer__logo {
+  display: block;
+  max-width: 181px;
+  margin-bottom: 18px;
+}
+.footer__logo img {
+  width: 100%;
+}
+.footer__logo-text {
+  font-family: "Inter18pt";
+  font-size: 16px;
+  line-height: 19.2px;
+  max-width: 280px;
+}
+
+.footer__col-title {
+  font-family: "ReadexPro";
+  font-size: 22px;
+  line-height: 27.5px;
+  margin-bottom: 20px;
+}
+.footer__col-item {
+  font-family: "Inter18pt";
+  font-size: 17px;
+  line-height: 21.6px;
+  margin-bottom: 15px;
+}

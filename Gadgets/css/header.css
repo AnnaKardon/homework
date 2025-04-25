@@ -1,0 +1,275 @@
+.header__top {
+  padding-top: 30px;
+}
+
+.header__top-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 70px 60px;
+}
+
+.header__logo {
+  min-width: 170px;
+  top: 30px;
+  z-index: 11;
+  margin: 0 20px 0 0;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  gap: 4vh 40px;
+  margin: 0 auto;
+}
+
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Inter18pt';
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.nav__link {
+  display: block;
+  padding: 2px 0;
+  position: relative;
+}
+
+.nav__link::after {
+  content: url("../img/icons/navarrow.svg");
+  position: absolute;
+  top: 2px;
+  right: -16px;
+
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.nav__link:hover:after {
+  opacity: 1;
+}
+
+
+.nav__search {
+  display: flex;
+  gap: 4vh 20px;
+  z-index: 11;
+}
+
+/* ==========BURGER=========== */
+
+
+.burger-icon {
+  display: none;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+  display: block;
+  width: 30px;
+  height: 2.5px;
+  border-radius: 100px;
+  background: #000;
+  transition: all .4s;
+}
+
+.burger-icon span {
+position: relative;
+display: block;
+width: 30px;
+height: 2.5px;
+border-radius: 100px;
+background: #000;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+  content: '';
+  position: absolute;
+  }
+
+.burger-icon span::before {
+  top: -8px;
+}
+
+.burger-icon span::after {
+  bottom: -8px;
+}
+
+.body--opened-menu .burger-icon span {
+  background: transparent;
+}
+.body--opened-menu .burger-icon span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.body--opened-menu .burger-icon span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+/* =============================== */
+/* =============================== */
+/* =============================== */
+
+.hero__slider {
+  width: 100%;
+  height: 550px;
+  background: #DCE5E2;
+  border-radius: 32px;
+  position: relative;
+  margin-bottom: 75px;
+}
+
+
+.hero__wrapper {
+  position: relative;
+  flex-grow: 1;
+
+}
+
+.hero__slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__slide-one {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero__content {
+  align-items: center;
+  margin: 0 56px;
+}
+
+.hero__content-one {
+  margin-bottom: 8em;
+}
+
+.hero__info {
+  max-width: 580px;
+}
+
+.hero__title {
+  font-family: 'ReadexPro';
+  font-size: 58px;
+  line-height: 69.6px;
+  margin-bottom: 19px;
+}
+
+.hero__text {
+  font-family: 'Inter18pt';
+  line-height: 19.2px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__button {
+  width: 170px;
+  height: 50px;
+  font-family: 'Inter18pt';
+  line-height: 19.2px;
+
+  transition: var(--transition);
+}
+
+.hero__button:hover {
+  background: #ffffff77;
+  border: 1px solid #867c7c;
+}
+
+.hero__img img {
+  align-items: end;
+  width: 100%;
+  max-width: 647px;
+  max-height: 550px;
+
+  gap: 20px;
+  padding: 30px 30px 0 0;
+}
+
+.hero__img-one img {
+  display: flex;
+  align-items: flex-end;
+  bottom: 0;
+  right: 0;
+}
+
+.hero__img-three img {
+  padding-top: 0;
+}
+
+.hero__prev,
+.hero__next {
+  background: transparent;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  width: 12px;
+  height: 24px;
+  color: #434343;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+
+  z-index: 11;
+}
+
+.hero__prev {
+  left: 1em;
+}
+
+.hero__next {
+  right: 1em;
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+  gap: 17px;
+  z-index: 15;
+}
+.swiper-pagination-bullet {
+  border-radius: 20px;
+  background: transparent;
+  max-width: 194px;
+  width: 100%;
+  height: 2px;
+  background: #757575;
+  opacity: 1;
+  
+  transition: all .4s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000000;
+}
+
+/* ==================================== */
+/* ==================================== */
+/* ==================================== */
+/* ==================================== */
